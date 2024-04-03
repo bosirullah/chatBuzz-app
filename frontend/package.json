@@ -4,10 +4,10 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "frontend/vite",
-        "build": "frontend/vite build",
+        "dev": "./node_modules/.bin/vite",
+        "build": "./node_modules/.bin/vite build",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "./node_modules/.bin/vite preview"
     },
     "proxy": "http://127.0.0.1:5000",
     "dependencies": {
