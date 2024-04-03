@@ -17,7 +17,6 @@
         "@emotion/styled": "^11.11.0",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "axios": "^1.6.7",
-        "chat-app": "file:..",
         "framer-motion": "^11.0.13",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
