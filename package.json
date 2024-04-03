@@ -1,0 +1,27 @@
+{
+    "name": "chat-app",
+    "version": "1.0.0",
+    "description": "chat app using MERN stack",
+    "main": "server.js",
+    "scripts": {
+        "start": "node backend/server.js",
+        "server": "nodemon backend/server.js",
+        "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+    },
+    "author": "Md Bosirullah Mondal",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.8",
+        "bcryptjs": "^2.4.3",
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.18.3",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongodb": "^6.5.0",
+        "mongoose": "^8.2.2",
+        "nodemon": "^3.1.0",
+        "socket.io": "^4.7.5"
+    }
+}
