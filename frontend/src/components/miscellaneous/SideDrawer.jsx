@@ -76,7 +76,7 @@ const SideDrawer = () => {
             };
 
             const { data } = await axios.get(
-                `http://localhost:5000/api/user?search=${search}`,
+                `https://chatbuzz-app.onrender.com/api/user?search=${search}`,
                 config
             );
 
@@ -105,7 +105,7 @@ const SideDrawer = () => {
             };
 
             const { data } = await axios.post(
-                "http://localhost:5000/api/chat",
+                "https://chatbuzz-app.onrender.com/api/chat",
                 { userId },
                 config
             );

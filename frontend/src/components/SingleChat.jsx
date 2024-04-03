@@ -16,7 +16,7 @@ import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import axios from "axios";
 import "./styles.css";
 import ScrollableChat from "./ScrollableChat";
-// import Lottie from "react-lottie";
+import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
 
 import io from "socket.io-client";
@@ -62,7 +62,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
             setLoading(true);
             const { data } = await axios.get(
-                `http://localhost:5000/api/message/${selectedChat._id}`,
+                `https://chatbuzz-app.onrender.com/api/message/${selectedChat._id}`,
                 config
             );
 
@@ -125,7 +125,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
                 setNewMessage("");
                 const { data } = await axios.post(
-                    "http://localhost:5000/api/message",
+                    "https://chatbuzz-app.onrender.com/api/message",
                     {
                         content: newMessage,
                         chatId: selectedChat,
@@ -246,14 +246,14 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                         <FormControl onKeyDown={sendMessage} isRequired mt={3}>
                             {isTyping ? (
                                 <div>
-                                    {/* <Lottie
+                                    <Lottie
                                         options={defaultOptions}
                                         width={70}
                                         style={{
                                             marginBottom: 15,
                                             marginLeft: 0,
                                         }}
-                                    /> */}
+                                    />
                                 </div>
                             ) : (
                                 <></>
